@@ -39,7 +39,7 @@ def vertices(x, y):
 
 
 # opening the image
-input_image = Image.open(r"C:\Users\hp\Desktop\nb.JPG").convert("L")
+input_image = Image.open(r"C:\Users\hp\Desktop\input_image.JPG").convert("L")
 new_image = input_image.resize((input_image.size[0]*10, input_image.size[1]*10)) # resizing should be done based on the size of input image
 # print(new_image.size)
 
@@ -79,5 +79,5 @@ for x in range(0, new_image.width, dot_size):
 
 
 
-output_image.save("AG.jpg")
+output_image.save("output_image.jpg")
 print(polygon_count) #printing the total polygon count in the entire image
